@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angularProj01';
+  fontsize: string = '2em';
+
+  fontSizeChanged($event){
+    console.log($event.target.value)
+    const val = parseInt($event.target.value)
+    this.fontsize = `${val}em`
+    console.log(this.fontsize)
+  }
 }

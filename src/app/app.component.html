@@ -1,9 +1,3 @@
-<!-- navbar -->
-
-<nav class='toolbar'>Welcome to the demo app!</nav>
-
-<!-- content -->
-
 <div class="left content">
   <form action="/submit" method="POST">
     <table>
@@ -33,34 +27,32 @@
   </form>
 </div>
 
-<div class="right content">
-  <table>
-  <th>Adoption Records</th>
-  <tr>
-    <td width="30%">Adopter</td>
-    <td width="30%">Phone No.</td>
-    <td width="30%">Rescue Pet Id</td>
-  </tr>
+<div>
+  <h2 [style.font-size]="fontsize">Changing font size</h2>
+  <input type="range" name="" id="" min="1" max="10" step="0.1"
+  (change)="fontSizeChanged($event)">
 
-  </table>
 </div>
 
-<h2>Current Rescues</h2>
-  <video controls>
-    <source src="assets/puppy_intro.mp4" type="video/mp4">
-  </video>
-  
-  <div class="card">
-    <img src="assets/pomeranian01.jpg" alt="pomeranian">
-    <audio controls>
-      <source src="assets/pomeranian_bark.mp3" type="audio/mp3">
-      <p>Your browser does not support HTML5 audio. Click <a href="assets/pomeranian_bark.mp3">here</a> to listen to the audio instead.</p>
-    </audio>
-  </div>  
-  <div class="card">
-    <img src="assets/spitz.jpg" alt="spitz">
-    <audio controls>
-      <source src="assets/spitz_bark.mp3">
-    </audio>
-  </div>
 
+<div class="rescues">
+  <h2>Current Rescues</h2>
+    <video controls>
+      <source src="assets/puppy_intro.mp4" type="video/mp4">
+    </video>
+    
+    <div class="card">
+      <img src="assets/pomeranian01.jpg" alt="pomeranian">
+      <audio controls>
+        <source src="assets/pomeranian_bark.mp3" type="audio/mp3">
+        <p>Your browser does not support HTML5 audio. Click <a href="assets/pomeranian_bark.mp3">here</a> to listen to the audio instead.</p>
+      </audio>
+    </div>  
+    <div class="card">
+      <img src="assets/spitz.jpg" alt="spitz">
+      <audio controls>
+        <source src="assets/spitz_bark.mp3">
+      </audio>
+    </div>
+
+</div>

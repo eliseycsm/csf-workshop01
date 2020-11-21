@@ -5,6 +5,7 @@
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background: gray;
   }
 
   h1,
@@ -26,56 +27,20 @@
   img {
       width: 50%;
   }
-  .spacer {
-    flex: 1;
-  }
-
-  .toolbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    background-color: gray;
-    color: white;
-    font-weight: 600;
-  }
-
-  .toolbar img {
-    margin: 0 16px;
-  }
 
   .content {
-    display: inline-flex;
+    display: block;
     margin: 82px auto 32px;
     padding: 0 16px;
     max-width: 960px;
-    flex-direction: column;
+    flex-direction: row;
     height: 450px;
   }
 
   .left {
-      float: left;
+
       width: 70%;
       
-  }
-
-  .right {
-      float: right;
-      width: 30%;
-  }
-  svg.material-icons {
-    height: 24px;
-    width: auto;
-  }
-
-  .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 16px;
   }
 
   .card {
@@ -97,7 +62,7 @@
   .rescues {
       display: inline-flex;
       flex-direction: column;
-      margin: 0 auto;
+      justify-content: center;
   }
   
 
